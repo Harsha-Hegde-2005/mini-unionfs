@@ -6,7 +6,6 @@
 #include <stdio.h>
 
 int resolve_path(const char *path, char *resolved_path) {
-<<<<<<< HEAD
     struct stat st;
     char temp[PATH_MAX];
     struct mini_unionfs_state *state = UNIONFS_DATA;
@@ -31,8 +30,5 @@ int resolve_path(const char *path, char *resolved_path) {
         return 0;
     }
 
-=======
-    // TODO: implement path resolution
->>>>>>> c59f71ab09602a50e272f57d0f3bd771c6e49f0f
     return -ENOENT;
 }

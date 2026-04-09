@@ -6,11 +6,9 @@
 #include <fuse.h>
 #include <limits.h>
 
-/* ============================================================
- * Global state: holds absolute paths to lower and upper dirs.
+/* Global state: holds absolute paths to lower and upper dirs.
  * Passed to fuse_main() and retrieved in every callback via
- * the UNIONFS_DATA macro.
- * ============================================================ */
+ * the UNIONFS_DATA macro. */
 struct mini_unionfs_state {
     char *lower_dir;
     char *upper_dir;
